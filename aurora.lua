@@ -5224,7 +5224,7 @@ local Misc = RavenENV.Misc
 local Calculations = RavenENV.Calculations
 local Esp = RavenENV.Esp
 local Window = Library:CreateWindow({
-    Title = "Aurora.pw",
+    Title = "AuroraProject",
     Center = true,
     AutoShow = true,
     TabPadding = 0,
@@ -5356,7 +5356,7 @@ do
 local MiscTab = Window:AddTab("Разное")
 local VisualsTab = Window:AddTab("Визуалы")
 local SettingsTab = Window:AddTab("Настройки")
---
+
 local RageBotGroup = RageTab:AddLeftGroupbox("Основное")
 local TrackingGroup = RageTab:AddLeftGroupbox("Трекинг")
 local RageBotSettingsGroup = RageTab:AddCenterGroupbox("Настройки Рейджа")
@@ -5368,6 +5368,9 @@ local MovementGroup = MiscTab:AddRightGroupbox("Движение")
 local AnotherGroup = MiscTab:AddCenterGroupbox("Другое")
 
 local ExploitsGroup = MiscTab:AddLeftGroupbox("Эксплойты")
+
+
+
 
 RageBotGroup:AddToggle("RageBot_Enabled", {Text = "Включить"})
     :AddKeyPicker("RageBotKeyBind", {Default = '...', SyncToggleState = false, Mode = "Toggle", Text = "Rage Bot", NoUI = false})
@@ -5508,6 +5511,8 @@ MovementGroup:AddSlider("Movement_OverrideSpeed", {Text = "Скорость пе
     local Worldtabbox = VisualsTab:AddRightTabbox("Мир")
     local LightTab = Worldtabbox:AddTab("Свет")
     local ParticlesTab = Worldtabbox:AddTab("Частицы")
+     local MapTab = Worldtabbox:AddTab("Карта")
+
     local LocalTabbox = VisualsTab:AddCenterTabbox("Локальное")
     local CameraTab = LocalTabbox:AddTab("Камера")
     local ArmsTab = LocalTabbox:AddTab("Руки")
@@ -8515,9 +8520,9 @@ do --Funcs
         end)
         RunService.Heartbeat:Connect(function()
             if Flags["Inf_Ammo"] then 
-                LocalPlayer.PlayerGui.GUI.AmmoGUI.AmmoClip.Text = 't.me/zefersuwav'
+                LocalPlayer.PlayerGui.GUI.AmmoGUI.AmmoClip.Text = 't.me/zeferuswav'
                 LocalPlayer.PlayerGui.GUI.AmmoGUI.AmmoReserve.Text = 't.me/zeferuswav'
-                LocalPlayer.PlayerGui.GUI.AmmoGUI.AmmoClip.TextColor3 = _Color3FromRGB(255, 255, 255)
+                LocalPlayer.PlayerGui.GUI.AmmoGUI.AmmoClip.TextColor3 = _Color3FromRGB(111, 111, 111)
                 Cache.Client.vars.ammocount = 133333337
                 Cache.Client.vars.primarystored = 133333337
                 Cache.Client.vars.ammocount2 = 133333337
