@@ -1,4 +1,4 @@
-for i = 1,math.huge do
+for i = 1, 11223344 do
 print("Nigga" .. i)
 end
 
