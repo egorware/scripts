@@ -1,4 +1,4 @@
-for i = 1, 112233 do
+for i = 1, 11223 do
 print("Nigga" .. i)
 end
 
